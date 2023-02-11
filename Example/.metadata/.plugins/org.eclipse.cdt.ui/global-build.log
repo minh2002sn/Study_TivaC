@@ -1,0 +1,969 @@
+
+**** Clean-only build of configuration Debug for project example1 ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "example1.hex"  "example1.out" 
+DEL /F "gpio.obj" "main.obj" "sysctl.obj" "tm4c123gh6pm_startup_ccs.obj" 
+DEL /F "gpio.d" "main.d" "sysctl.d" "tm4c123gh6pm_startup_ccs.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example1 ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example1" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example1" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../sysctl.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example1" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="sysctl.d_raw"  "../sysctl.c"
+Finished building: "../sysctl.c"
+ 
+Building file: "../gpio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example1" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="gpio.d_raw"  "../gpio.c"
+Finished building: "../gpio.c"
+ 
+Building target: "example1.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me -Ooff --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"example1.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="example1_linkInfo.xml" --rom_model -o "example1.out" "./gpio.obj" "./main.obj" "./sysctl.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "example1.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Example2 ****
+
+make clean 
+
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+Error: Program "make" is not found in PATH
+
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example2 ****
+
+make all 
+
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+Error: Program "make" is not found in PATH
+
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example2 ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example2" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example2" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building target: "Example2.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 --reread_libs --warn_sections --rom_model -o "Example2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+error: cannot find file "libc.a"
+warning: automatic RTS selection:  attempt to automatically link in index
+   library "libc.a" failed; file not found
+warning: entry-point symbol "_c_int00" undefined
+"../tm4c123gh6pm.cmd", line 45: error: undefined symbol "__stack" used in
+   expression
+warning: no suitable entry-point found; setting to 0
+error: errors encountered during linking; "Example2.out" not built
+ 
+>> Compilation failure
+makefile:136: recipe for target 'Example2.out' failed
+gmake: *** [Example2.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example2 ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building target: "Example2.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "Example2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Example2.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Example3_UART ****
+
+make clean 
+
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+Error: Program "make" is not found in PATH
+
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example3_UART ****
+
+make all 
+
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+Error: Program "make" is not found in PATH
+
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example3_UART ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: fatal error: cannot open source file "stdint.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example3_UART ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.1.4.178" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example3_UART" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 3: fatal error: cannot open source file "inc/hw_memmap.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Example3_UART ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" clean 
+ 
+DEL /F  "Example3_UART.out" 
+DEL /F "main.obj" "tm4c123gh6pm_startup_ccs.obj" "uart.obj" 
+DEL /F "main.d" "tm4c123gh6pm_startup_ccs.d" "uart.d" 
+Could Not Find D:\A_Minh\A_3rd-year university\A_Coding Embedded System\Tiva Code\Example\Example3_UART\Debug\Example3_UART.out
+Could Not Find D:\A_Minh\A_3rd-year university\A_Coding Embedded System\Tiva Code\Example\Example3_UART\Debug\main.obj
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example3_UART ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example3_UART" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example3_UART" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../uart.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example3_UART" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="uart.d_raw"  "../uart.c"
+Finished building: "../uart.c"
+ 
+Building target: "Example3_UART.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 --reread_libs --warn_sections --rom_model -o "Example3_UART.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+error: cannot find file "libc.a"
+warning: automatic RTS selection:  attempt to automatically link in index
+   library "libc.a" failed; file not found
+warning: entry-point symbol "_c_int00" undefined
+"../tm4c123gh6pm.cmd", line 45: error: undefined symbol "__stack" used in
+   expression
+warning: no suitable entry-point found; setting to 0
+error: errors encountered during linking; "Example3_UART.out" not built
+ 
+>> Compilation failure
+makefile:137: recipe for target 'Example3_UART.out' failed
+gmake: *** [Example3_UART.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example3_UART ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building target: "Example3_UART.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "Example3_UART.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Example3_UART.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project Example4_UARTInterrupt ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 8 clean -O 
+ 
+DEL /F  "Example4_UARTInterrupt.out" 
+DEL /F "main.obj" "tm4c123gh6pm_startup_ccs.obj" "uart.obj" 
+DEL /F "main.d" "tm4c123gh6pm_startup_ccs.d" "uart.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Example4_UARTInterrupt ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example4_UARTInterrupt" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example4_UARTInterrupt" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../uart.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/Example4_UARTInterrupt" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="uart.d_raw"  "../uart.c"
+Finished building: "../uart.c"
+ 
+Building target: "Example4_UARTInterrupt.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"Example4_UARTInterrupt.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Example4_UARTInterrupt_linkInfo.xml" --rom_model -o "Example4_UARTInterrupt.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uart.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "Example4_UARTInterrupt.out"
+ 
+
+**** Build Finished ****
+23:55:03 **** Clean-only build of configuration Debug for project example5_systick ****
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build of configuration Debug for project example5_systick ****
+
+Nothing to build for project example5_systick
+
+**** Clean-only build of configuration Debug for project example5_systick ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" clean 
+ 
+"example5_systick.hex"  "example5_systick.out" 
+"main.obj" "tm4c123gh6pm_startup_ccs.obj" "uartstdio.obj" 
+"main.d" "tm4c123gh6pm_startup_ccs.d" "uartstdio.d" 
+process_begin: CreateProcess(NULL, example5_systick.hex example5_systick.out, ...) failed.
+ 
+process_begin: CreateProcess(D:\A_Minh\A_3rd-year university\A_Coding Embedded System\Tiva Code\Example\example5_systick\Debug\main.obj, main.obj tm4c123gh6pm_startup_ccs.obj uartstdio.obj, ...) failed.
+make (e=193): Error 193
+process_begin: CreateProcess(D:\A_Minh\A_3rd-year university\A_Coding Embedded System\Tiva Code\Example\example5_systick\Debug\main.d, main.d tm4c123gh6pm_startup_ccs.d uartstdio.d, ...) failed.
+make (e=193): Error 193
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example5_systick ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 40: fatal error: could not open source file "stdbool.h" (no directories in search list)
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example5_systick ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example5_systick" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example5_systick" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../uartstdio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example5_systick" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="uartstdio.d_raw"  "../uartstdio.c"
+Finished building: "../uartstdio.c"
+ 
+Building target: "example5_systick.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 --reread_libs --warn_sections --rom_model -o "example5_systick.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+error: cannot find file "libc.a"
+warning: automatic RTS selection:  attempt to automatically link in index
+   library "libc.a" failed; file not found
+warning: entry-point symbol "_c_int00" undefined
+ 
+ undefined            first referenced
+  symbol                  in file     
+ ---------            ----------------
+ __TI_decompress_lzss                 
+ __TI_decompress_none                 
+ __aeabi_uidivmod     ./uartstdio.obj 
+ 
+error: unresolved symbols remain
+"../tm4c123gh6pm.cmd", line 45: error: undefined symbol "__stack" used in
+   expression
+warning: no suitable entry-point found; setting to 0
+error: errors encountered during linking; "example5_systick.out" not built
+ 
+>> Compilation failure
+makefile:137: recipe for target 'example5_systick.out' failed
+gmake: *** [example5_systick.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example5_systick ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building target: "example5_systick.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example5_systick.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "example5_systick.out"
+ 
+
+**** Build Finished ****
+23:58:01 **** Clean-only build of configuration Debug for project example6_cmdline ****
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+Nothing to build for project example6_cmdline
+
+**** Clean-only build of configuration Debug for project example6_cmdline ****
+
+make clean 
+
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+Error: Program "make" is not found in PATH
+
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+make all 
+
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+Error: Program "make" is not found in PATH
+
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../cmdline.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="cmdline.d_raw"  "../cmdline.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'cmdline.obj' failed
+"../cmdline.c", line 32: fatal error: could not open source file "stdint.h" (no directories in search list)
+1 catastrophic error detected in the compilation of "../cmdline.c".
+Compilation terminated.
+gmake: *** [cmdline.obj] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../cmdline.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="cmdline.d_raw"  "../cmdline.c"
+Finished building: "../cmdline.c"
+ 
+Building file: "../command.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="command.d_raw"  "../command.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'command.obj' failed
+"../command.c", line 26: error: identifier "UART0_BASE" is undefined
+"../command.c", line 84: warning: function "update_color" declared implicitly
+"../command.c", line 84: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 84: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 98: warning: function "setADCChannel" declared implicitly
+"../command.c", line 98: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 98: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 106: warning: function "broadcastADCOutput" declared implicitly
+"../command.c", line 106: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 121: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 123: warning: function "my_strcmp" declared implicitly
+"../command.c", line 125: warning: function "onRelay" declared implicitly
+"../command.c", line 130: warning: function "offRelay" declared implicitly
+1 error detected in the compilation of "../command.c".
+gmake: *** [command.obj] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../command.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="command.d_raw"  "../command.c"
+"../command.c", line 87: warning: function "update_color" declared implicitly
+"../command.c", line 87: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 87: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 101: warning: function "setADCChannel" declared implicitly
+"../command.c", line 101: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 101: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 109: warning: function "broadcastADCOutput" declared implicitly
+"../command.c", line 109: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 124: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 126: warning: function "my_strcmp" declared implicitly
+"../command.c", line 128: warning: function "onRelay" declared implicitly
+"../command.c", line 133: warning: function "offRelay" declared implicitly
+Finished building: "../command.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 49: warning: function "UARTStdioConfig" declared implicitly
+"../main.c", line 95: error: identifier "gotCommandFlag" is undefined
+"../main.c", line 98: error: identifier "commandBuffer" is undefined
+"../main.c", line 99: warning: function "UARTprintf" declared implicitly
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 53: warning: function "UARTStdioConfig" declared implicitly
+"../main.c", line 102: warning: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+"../main.c", line 103: warning: function "UARTprintf" declared implicitly
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../uartstdio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="uartstdio.d_raw"  "../uartstdio.c"
+Finished building: "../uartstdio.c"
+ 
+Building target: "example6_cmdline.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example6_cmdline.out" "./cmdline.obj" "./command.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+error: symbol "gotCommandFlag" redefined: first defined in "./command.obj";
+   redefined in "./main.obj"
+ 
+ undefined          first referenced
+  symbol                in file     
+ ---------          ----------------
+ CHAR2TOBIN         ./command.obj   
+ CHARTOBIN          ./command.obj   
+ broadcastADCOutput ./command.obj   
+ g_psCmdTable       ./cmdline.obj   
+ my_strcmp          ./command.obj   
+ offRelay           ./command.obj   
+ onRelay            ./command.obj   
+ setADCChannel      ./command.obj   
+ update_color       ./command.obj   
+ 
+error: unresolved symbols remain
+error: errors encountered during linking; "example6_cmdline.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'example6_cmdline.out' failed
+gmake: *** [example6_cmdline.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 53: warning: function "UARTStdioConfig" declared implicitly
+"../main.c", line 102: warning: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+"../main.c", line 103: warning: function "UARTprintf" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "example6_cmdline.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example6_cmdline.out" "./cmdline.obj" "./command.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined          first referenced
+  symbol                in file     
+ ---------          ----------------
+ CHAR2TOBIN         ./command.obj   
+ CHARTOBIN          ./command.obj   
+ broadcastADCOutput ./command.obj   
+ g_psCmdTable       ./cmdline.obj   
+ my_strcmp          ./command.obj   
+ offRelay           ./command.obj   
+ onRelay            ./command.obj   
+ setADCChannel      ./command.obj   
+ update_color       ./command.obj   
+ 
+error: unresolved symbols remain
+error: errors encountered during linking; "example6_cmdline.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'example6_cmdline.out' failed
+gmake: *** [example6_cmdline.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 54: warning: function "UARTStdioConfig" declared implicitly
+"../main.c", line 103: warning: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+"../main.c", line 104: warning: function "UARTprintf" declared implicitly
+Finished building: "../main.c"
+ 
+Building target: "example6_cmdline.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example6_cmdline.out" "./cmdline.obj" "./command.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined          first referenced
+  symbol                in file     
+ ---------          ----------------
+ CHAR2TOBIN         ./command.obj   
+ CHARTOBIN          ./command.obj   
+ broadcastADCOutput ./command.obj   
+ g_psCmdTable       ./cmdline.obj   
+ my_strcmp          ./command.obj   
+ offRelay           ./command.obj   
+ onRelay            ./command.obj   
+ setADCChannel      ./command.obj   
+ update_color       ./command.obj   
+ 
+error: unresolved symbols remain
+error: errors encountered during linking; "example6_cmdline.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'example6_cmdline.out' failed
+gmake: *** [example6_cmdline.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 104: warning: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+Finished building: "../main.c"
+ 
+Building target: "example6_cmdline.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example6_cmdline.out" "./cmdline.obj" "./command.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined          first referenced
+  symbol                in file     
+ ---------          ----------------
+ CHAR2TOBIN         ./command.obj   
+ CHARTOBIN          ./command.obj   
+ broadcastADCOutput ./command.obj   
+ g_psCmdTable       ./cmdline.obj   
+ my_strcmp          ./command.obj   
+ offRelay           ./command.obj   
+ onRelay            ./command.obj   
+ setADCChannel      ./command.obj   
+ update_color       ./command.obj   
+ 
+error: unresolved symbols remain
+error: errors encountered during linking; "example6_cmdline.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'example6_cmdline.out' failed
+gmake: *** [example6_cmdline.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building target: "example6_cmdline.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example6_cmdline.out" "./cmdline.obj" "./command.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined          first referenced
+  symbol                in file     
+ ---------          ----------------
+ CHAR2TOBIN         ./command.obj   
+ CHARTOBIN          ./command.obj   
+ broadcastADCOutput ./command.obj   
+ g_psCmdTable       ./cmdline.obj   
+ my_strcmp          ./command.obj   
+ offRelay           ./command.obj   
+ onRelay            ./command.obj   
+ setADCChannel      ./command.obj   
+ update_color       ./command.obj   
+ 
+error: unresolved symbols remain
+error: errors encountered during linking; "example6_cmdline.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'example6_cmdline.out' failed
+gmake: *** [example6_cmdline.out] Error 1
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" clean 
+ 
+DEL /F  "example6_cmdline.out" 
+DEL /F "cmdline.obj" "command.obj" "main.obj" "tm4c123gh6pm_startup_ccs.obj" "uartstdio.obj" 
+DEL /F "cmdline.d" "command.d" "main.d" "tm4c123gh6pm_startup_ccs.d" "uartstdio.d" 
+Could Not Find D:\A_Minh\A_3rd-year university\A_Coding Embedded System\Tiva Code\Example\example6_cmdline\Debug\example6_cmdline.out
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example6_cmdline ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../cmdline.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="cmdline.d_raw"  "../cmdline.c"
+Finished building: "../cmdline.c"
+ 
+Building file: "../command.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="command.d_raw"  "../command.c"
+"../command.c", line 87: warning: function "update_color" declared implicitly
+"../command.c", line 87: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 87: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 101: warning: function "setADCChannel" declared implicitly
+"../command.c", line 101: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 101: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 109: warning: function "broadcastADCOutput" declared implicitly
+"../command.c", line 109: warning: function "CHAR2TOBIN" declared implicitly
+"../command.c", line 124: warning: function "CHARTOBIN" declared implicitly
+"../command.c", line 126: warning: function "my_strcmp" declared implicitly
+"../command.c", line 128: warning: function "onRelay" declared implicitly
+"../command.c", line 133: warning: function "offRelay" declared implicitly
+Finished building: "../command.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 104: warning: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+Finished building: "../main.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../uartstdio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example6_cmdline" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="uartstdio.d_raw"  "../uartstdio.c"
+Finished building: "../uartstdio.c"
+ 
+Building target: "example6_cmdline.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example6_cmdline.out" "./cmdline.obj" "./command.obj" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+ 
+ undefined          first referenced
+  symbol                in file     
+ ---------          ----------------
+ CHAR2TOBIN         ./command.obj   
+ CHARTOBIN          ./command.obj   
+ broadcastADCOutput ./command.obj   
+ g_psCmdTable       ./cmdline.obj   
+ my_strcmp          ./command.obj   
+ offRelay           ./command.obj   
+ onRelay            ./command.obj   
+ setADCChannel      ./command.obj   
+ update_color       ./command.obj   
+ 
+error: unresolved symbols remain
+error: errors encountered during linking; "example6_cmdline.out" not built
+ 
+>> Compilation failure
+makefile:139: recipe for target 'example6_cmdline.out' failed
+gmake: *** [example6_cmdline.out] Error 1
+
+**** Build Finished ****
+00:09:37 **** Clean-only build of configuration Debug for project example7_SwitchStateMachine ****
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build of configuration Debug for project example7_SwitchStateMachine ****
+
+Nothing to build for project example7_SwitchStateMachine
+
+**** Clean-only build of configuration Debug for project example7_SwitchStateMachine ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" clean 
+ 
+DEL /F  "example7_SwitchStateMachine.hex"  "example7_SwitchStateMachine.out" 
+DEL /F "led.obj" "ledRedStateMachine.obj" "main.obj" "switches.obj" "tm4c123gh6pm_startup_ccs.obj" "uartstdio.obj" 
+DEL /F "led.d" "ledRedStateMachine.d" "main.d" "switches.d" "tm4c123gh6pm_startup_ccs.d" "uartstdio.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example7_SwitchStateMachine ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../led.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example7_SwitchStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="led.d_raw"  "../led.c"
+Finished building: "../led.c"
+ 
+Building file: "../ledRedStateMachine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example7_SwitchStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="ledRedStateMachine.d_raw"  "../ledRedStateMachine.c"
+Finished building: "../ledRedStateMachine.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example7_SwitchStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 104: warning: variable "ui32PrevCount" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building file: "../switches.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example7_SwitchStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="switches.d_raw"  "../switches.c"
+"../switches.c", line 44: warning: missing return statement at end of non-void function "switchState"
+Finished building: "../switches.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example7_SwitchStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../uartstdio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example7_SwitchStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="uartstdio.d_raw"  "../uartstdio.c"
+Finished building: "../uartstdio.c"
+ 
+Building target: "example7_SwitchStateMachine.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/TivaWare_C_Series-2.2.0.295/lib" --reread_libs --warn_sections --rom_model -o "example7_SwitchStateMachine.out" "./led.obj" "./ledRedStateMachine.obj" "./main.obj" "./switches.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+error: cannot find file "libc.a"
+warning: automatic RTS selection:  attempt to automatically link in index
+   library "libc.a" failed; file not found
+warning: entry-point symbol "_c_int00" undefined
+"../tm4c123gh6pm.cmd", line 45: error: undefined symbol "__stack" used in
+   expression
+warning: no suitable entry-point found; setting to 0
+error: errors encountered during linking; "example7_SwitchStateMachine.out" not
+   built
+ 
+>> Compilation failure
+makefile:140: recipe for target 'example7_SwitchStateMachine.out' failed
+gmake: *** [example7_SwitchStateMachine.out] Error 1
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example7_SwitchStateMachine ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building target: "example7_SwitchStateMachine.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example7_SwitchStateMachine.out" "./led.obj" "./ledRedStateMachine.obj" "./main.obj" "./switches.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "example7_SwitchStateMachine.out"
+ 
+
+**** Build Finished ****
+00:13:57 **** Clean-only build of configuration Debug for project example8_multiStateMachine ****
+make clean 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/ti/ccs1220/ccs/eclipse/jre/bin/server;C:/ti/ccs1220/ccs/eclipse/jre/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files\Git\cmd;C:\Users\minhp\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\minhp\AppData\Local\Programs\Python\Python311\;C:\Users\minhp\AppData\Local\Microsoft\WindowsApps;C:\Users\minhp\AppData\Local\Programs\Microsoft VS Code\bin;C:\ti\ccs1220\ccs\eclipse]
+
+**** Build of configuration Debug for project example8_multiStateMachine ****
+
+Nothing to build for project example8_multiStateMachine
+
+**** Clean-only build of configuration Debug for project example8_multiStateMachine ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" clean 
+ 
+DEL /F  "example8_multiStateMachine.hex"  "example8_multiStateMachine.out" 
+DEL /F "led.obj" "ledGreenStateMachine.obj" "ledRedStateMachine.obj" "main.obj" "switches.obj" "tm4c123gh6pm_startup_ccs.obj" "uartstdio.obj" 
+DEL /F "led.d" "ledGreenStateMachine.d" "ledRedStateMachine.d" "main.d" "switches.d" "tm4c123gh6pm_startup_ccs.d" "uartstdio.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project example8_multiStateMachine ****
+
+"C:\\ti\\ccs1220\\ccs\\utils\\bin\\gmake" all 
+ 
+Building file: "../led.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example8_multiStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="led.d_raw"  "../led.c"
+Finished building: "../led.c"
+ 
+Building file: "../ledGreenStateMachine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example8_multiStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="ledGreenStateMachine.d_raw"  "../ledGreenStateMachine.c"
+Finished building: "../ledGreenStateMachine.c"
+ 
+Building file: "../ledRedStateMachine.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example8_multiStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="ledRedStateMachine.d_raw"  "../ledRedStateMachine.c"
+Finished building: "../ledRedStateMachine.c"
+ 
+Building file: "../main.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example8_multiStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 113: warning: variable "ui32PrevCount" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building file: "../switches.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example8_multiStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="switches.d_raw"  "../switches.c"
+"../switches.c", line 44: warning: missing return statement at end of non-void function "switchState"
+Finished building: "../switches.c"
+ 
+Building file: "../tm4c123gh6pm_startup_ccs.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example8_multiStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="tm4c123gh6pm_startup_ccs.d_raw"  "../tm4c123gh6pm_startup_ccs.c"
+Finished building: "../tm4c123gh6pm_startup_ccs.c"
+ 
+Building file: "../uartstdio.c"
+Invoking: Arm Compiler
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --include_path="C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include" --include_path="D:/A_Minh/A_3rd-year university/A_Coding Embedded System/Tiva Code/Example/example8_multiStateMachine" --include_path="C:/ti/TivaWare_C_Series-2.2.0.295" --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi --preproc_with_compile --preproc_dependency="uartstdio.d_raw"  "../uartstdio.c"
+Finished building: "../uartstdio.c"
+ 
+Building target: "example8_multiStateMachine.out"
+Invoking: Arm Linker
+"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM --gcc --abi=eabi -z -m"app_TM4C123GH6PM_ccs.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccs1220/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/lib" --reread_libs --warn_sections --rom_model -o "example8_multiStateMachine.out" "./led.obj" "./ledGreenStateMachine.obj" "./ledRedStateMachine.obj" "./main.obj" "./switches.obj" "./tm4c123gh6pm_startup_ccs.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.2.0.295/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd"  -llibc.a 
+<Linking>
+Finished building target: "example8_multiStateMachine.out"
+ 
+
+**** Build Finished ****
